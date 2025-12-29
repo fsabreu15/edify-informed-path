@@ -11,12 +11,30 @@ const OCurso = () => {
   ];
 
   const competencies = [
-    "Planejar e coordenar a execução de obras de edificações, articulando as diferentes etapas do processo construtivo",
-    "Aplicar metodologias de gestão de obras orientadas à produtividade e à qualidade",
-    "Utilizar ferramentas tecnológicas para planejamento, controle e documentação de obras",
-    "Especificar materiais e sistemas construtivos com base em critérios técnicos e normativos",
-    "Avaliar o desempenho de edificações segundo parâmetros estabelecidos em normas técnicas",
-    "Implementar práticas de gestão da qualidade e segurança no ambiente de obra"
+    {
+      title: "Planejamento e Gestão de Obras",
+      description: "Desenvolver a capacidade de planejar, programar e controlar obras de edificações, contemplando a gestão de recursos humanos, materiais e equipamentos. Inclui a elaboração de cronogramas físico-financeiros, a definição de estratégias de execução e o monitoramento sistemático do andamento das atividades em relação às metas estabelecidas."
+    },
+    {
+      title: "Interpretação e Compatibilização de Projetos",
+      description: "Analisar e interpretar projetos arquitetônicos, estruturais e de instalações prediais, identificando interfaces críticas e potenciais incompatibilidades. Desenvolver a habilidade de promover a coordenação entre as diferentes disciplinas de projeto, contribuindo para a redução de conflitos durante a fase de execução."
+    },
+    {
+      title: "Aplicação de Tecnologias Digitais",
+      description: "Utilizar ferramentas digitais aplicadas à construção civil, com destaque para sistemas de modelagem da informação da construção (BIM), softwares de planejamento e controle de obras, e recursos para documentação e gestão da informação técnica ao longo do ciclo de vida do empreendimento."
+    },
+    {
+      title: "Metodologias Contemporâneas de Gestão",
+      description: "Aplicar princípios e técnicas de gestão da produção oriundos de metodologias contemporâneas, incluindo conceitos de Lean Construction e abordagens ágeis adaptadas ao contexto da construção civil. Compreender a lógica de eliminação de desperdícios, fluxo contínuo e melhoria contínua dos processos construtivos."
+    },
+    {
+      title: "Controle de Qualidade e Conformidade Normativa",
+      description: "Implementar sistemas de controle de qualidade em obras de edificações, assegurando a conformidade dos serviços e materiais com as especificações de projeto e com as normas técnicas vigentes. Desenvolver competência para avaliação de desempenho das edificações conforme parâmetros normativos."
+    },
+    {
+      title: "Atuação Ética, Responsável e Sustentável",
+      description: "Exercer a prática profissional pautada por princípios éticos e de responsabilidade socioambiental. Compreender as implicações ambientais e sociais das decisões técnicas e incorporar critérios de sustentabilidade nas escolhas de materiais, sistemas construtivos e processos de execução."
+    }
   ];
 
   return (
@@ -228,15 +246,18 @@ const OCurso = () => {
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="space-y-6">
               {competencies.map((competency, index) => (
                 <div 
                   key={index} 
-                  className="p-5 bg-secondary/50 rounded-lg border border-border hover:border-primary/30 transition-colors duration-300"
+                  className="p-6 bg-card rounded-lg border border-border hover:border-primary/30 transition-colors duration-300"
                 >
-                  <div className="flex items-start gap-3">
-                    <span className="text-primary font-semibold text-lg">{String(index + 1).padStart(2, '0')}</span>
-                    <p className="text-foreground leading-relaxed">{competency}</p>
+                  <div className="flex items-start gap-4">
+                    <span className="text-primary font-semibold text-xl flex-shrink-0">{String(index + 1).padStart(2, '0')}</span>
+                    <div>
+                      <h4 className="text-foreground font-semibold mb-2">{competency.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed">{competency.description}</p>
+                    </div>
                   </div>
                 </div>
               ))}
