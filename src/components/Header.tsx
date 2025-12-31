@@ -20,10 +20,10 @@ const Header = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex flex-col">
-            <span className="text-lg md:text-xl font-semibold text-primary">
+            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
               Pós-Graduação
             </span>
-            <span className="text-xs md:text-sm text-muted-foreground -mt-1">
+            <span className="text-sm md:text-base text-muted-foreground -mt-1">
               Construção de Edifícios
             </span>
           </Link>
@@ -40,7 +40,7 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="https://www.pucminas.br/pos"
+              href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link flex items-center gap-1"
@@ -75,7 +75,7 @@ const Header = () => {
                 </Link>
               ))}
               <a
-                href="https://www.pucminas.br/pos"
+                href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-link flex items-center gap-1"

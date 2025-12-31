@@ -115,8 +115,8 @@ const OCurso = () => {
                 <h3 className="text-lg font-semibold text-foreground">Modalidade</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Presencial, com atividades desenvolvidas nas instalações da 
-                Pontifícia Universidade Católica de Minas Gerais.
+                EAD com videoaulas, permitindo flexibilidade de acesso aos 
+                conteúdos e adequação à rotina profissional do aluno.
               </p>
             </div>
 
