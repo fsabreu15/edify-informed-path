@@ -29,6 +29,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Links Oficiais</h4>
             <a
+              href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link text-sm flex items-center gap-1 mb-2"
+            >
+              Inscrições - Construção de Edifícios
+              <ExternalLink className="w-3 h-3" />
+            </a>
+            <a
               href="https://www.pucminas.br/pos"
               target="_blank"
               rel="noopener noreferrer"

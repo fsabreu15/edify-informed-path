@@ -26,25 +26,32 @@ const Index = () => {
         
         <div className="section-container relative z-10 py-20">
           <div className="max-w-3xl animate-fade-in-up">
-            <span className="inline-block px-4 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm font-medium mb-6">
-              Especialização Lato Sensu
+            <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-base font-medium mb-6">
+              Especialização Lato Sensu • EAD com Videoaulas
             </span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 leading-tight text-balance">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight text-balance">
               Pós-Graduação em Construção de Edifícios
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl">
-              Programa de especialização voltado ao aprofundamento técnico-científico 
-              em tecnologias construtivas, gestão de processos e execução de obras, 
-              com foco na formação de profissionais qualificados para os desafios 
-              contemporâneos da construção civil.
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed max-w-2xl font-medium">
+              Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes do setor.
+            </p>
+            <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl">
+              Programa avançado de especialização que integra tecnologias construtivas contemporâneas, 
+              gestão estratégica de obras e processos de execução, capacitando profissionais 
+              para enfrentar os desafios complexos da construção civil atual.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/o-curso" className="btn-primary inline-flex items-center gap-2">
-                Conheça o Curso
+              <a 
+                href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                Inscreva-se Agora
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link to="/estrutura-curricular" className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground">
-                Ver Estrutura Curricular
+              </a>
+              <Link to="/o-curso" className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground">
+                Conheça o Curso
               </Link>
             </div>
           </div>
@@ -71,7 +78,7 @@ const Index = () => {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Modalidade</p>
-                <p className="text-lg font-semibold text-foreground">Presencial</p>
+                <p className="text-lg font-semibold text-foreground">EAD com Videoaulas</p>
               </div>
             </div>
             
@@ -99,16 +106,27 @@ const Index = () => {
             />
             
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-              <p className="leading-relaxed">
+              <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
+                <p className="text-lg text-foreground font-medium mb-2">
+                  Este não é um curso básico.
+                </p>
+                <p className="text-muted-foreground">
+                  Trata-se de uma pós-graduação de alto nível, projetada para o aprimoramento 
+                  profissional de engenheiros e arquitetos que já atuam no mercado e buscam 
+                  atualização técnica avançada e diferenciação competitiva.
+                </p>
+              </div>
+
+              <p className="leading-relaxed text-lg">
                 O curso de Pós-Graduação <em>Lato Sensu</em> em Construção de Edifícios, 
-                oferecido pela Pontifícia Universidade Católica de Minas Gerais, constitui 
-                um programa de especialização destinado a profissionais graduados em 
-                Engenharia Civil, Arquitetura e Urbanismo, Tecnologia em Construção de 
-                Edifícios e áreas afins que buscam aprofundamento técnico-científico no 
-                campo da construção civil.
+                oferecido pela Pontifícia Universidade Católica de Minas Gerais na modalidade 
+                <strong> EAD com videoaulas</strong>, constitui um programa de especialização 
+                destinado a profissionais graduados em Engenharia Civil, Arquitetura e Urbanismo, 
+                Tecnologia em Construção de Edifícios e áreas afins que buscam aprofundamento 
+                técnico-científico no campo da construção civil.
               </p>
               
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-lg">
                 A proposta pedagógica do programa está fundamentada na integração entre 
                 conhecimentos teóricos e aplicações práticas, abordando de forma sistemática 
                 os principais aspectos relacionados à tecnologia, gestão e processos 
@@ -117,7 +135,7 @@ const Index = () => {
                 sustentabilidade, desempenho das edificações e inovação tecnológica.
               </p>
               
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-lg">
                 A formação proposta visa capacitar o profissional para atuar de forma 
                 qualificada nas diversas etapas do processo de produção de edifícios, 
                 incluindo planejamento, execução, controle de qualidade e gestão de obras. 
@@ -217,22 +235,21 @@ const Index = () => {
       {/* Official Info Section */}
       <section className="py-16 md:py-20 hero-gradient">
         <div className="section-container text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4">
-            Informações Oficiais
+          <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
+            Inscreva-se Agora
           </h2>
-          <p className="text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Para informações oficiais sobre o processo seletivo, requisitos de ingresso, 
-            documentação necessária e demais orientações acadêmicas, consulte os canais 
-            institucionais da Pontifícia Universidade Católica de Minas Gerais.
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Acesse o portal oficial da PUC Minas para realizar sua inscrição, 
+            consultar valores, datas e requisitos de ingresso.
           </p>
           <a
-            href="https://www.pucminas.br/pos"
+            href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground inline-flex items-center gap-2"
+            className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground inline-flex items-center gap-2 text-lg px-8 py-4"
           >
-            Acessar Portal Institucional
-            <ArrowRight className="w-4 h-4" />
+            Acessar Portal de Inscrições
+            <ArrowRight className="w-5 h-5" />
           </a>
         </div>
       </section>
