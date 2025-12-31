@@ -1,39 +1,40 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
-import { Target, Lightbulb, CheckCircle, MapPin, Calendar, Clock, Cpu, Users, BarChart3 } from "lucide-react";
+import { Target, Lightbulb, CheckCircle, MapPin, Calendar, Clock, Cpu, Users, BarChart3, ArrowRight, ExternalLink } from "lucide-react";
 
 const OCurso = () => {
   const objectives = [
-    "Desenvolver competências técnicas para o planejamento, gestão, execução e controle de obras de edificações, considerando as especificidades dos processos construtivos contemporâneos",
-    "Capacitar o profissional para a utilização de tecnologias digitais aplicadas à construção civil, incluindo ferramentas de modelagem da informação da construção e sistemas de gestão informatizada",
-    "Proporcionar formação em metodologias contemporâneas de gestão de obras, com ênfase em planejamento, produtividade, qualidade e segurança do trabalho",
-    "Promover a compreensão crítica das inter-relações entre projeto, produção e desempenho das edificações"
+    "Formar profissionais capacitados para gerenciar, planejar, executar e fiscalizar obras de edificações, com foco em tecnologias emergentes e metodologias inovadoras",
+    "Desenvolver habilidades em interpretação de projetos, orçamentação, gestão de obras, fundações e estruturas",
+    "Capacitar para aplicação de ferramentas como BIM, SHM, drones e scanners a laser na construção civil",
+    "Promover o uso de metodologias ágeis e Lean Construction para maior eficiência na execução das obras",
+    "Estimular uma atuação ética, crítica e humanista, preparando profissionais conscientes dos impactos sociais, ambientais e econômicos"
   ];
 
   const competencies = [
     {
-      title: "Planejamento e Gestão de Obras",
-      description: "Desenvolver a capacidade de planejar, programar e controlar obras de edificações, contemplando a gestão de recursos humanos, materiais e equipamentos. Inclui a elaboração de cronogramas físico-financeiros, a definição de estratégias de execução e o monitoramento sistemático do andamento das atividades em relação às metas estabelecidas."
+      title: "Planejamento e Execução de Obras",
+      description: "Planejar, gerenciar e executar obras de edificações com foco em eficiência, qualidade, segurança e sustentabilidade. Interpretar e desenvolver projetos técnicos, orçamentos e cronogramas de obras."
     },
     {
-      title: "Interpretação e Compatibilização de Projetos",
-      description: "Analisar e interpretar projetos arquitetônicos, estruturais e de instalações prediais, identificando interfaces críticas e potenciais incompatibilidades. Desenvolver a habilidade de promover a coordenação entre as diferentes disciplinas de projeto, contribuindo para a redução de conflitos durante a fase de execução."
+      title: "Tecnologias Digitais Aplicadas",
+      description: "Aplicar tecnologias digitais na construção civil, incluindo BIM (Building Information Modeling), SHM (Structural Health Monitoring), drones, laser scanners e câmeras 360° para captura de realidade e modelagem."
     },
     {
-      title: "Aplicação de Tecnologias Digitais",
-      description: "Utilizar ferramentas digitais aplicadas à construção civil, com destaque para sistemas de modelagem da informação da construção (BIM), softwares de planejamento e controle de obras, e recursos para documentação e gestão da informação técnica ao longo do ciclo de vida do empreendimento."
+      title: "Metodologias Ágeis e Lean Construction",
+      description: "Implementar metodologias ágeis e Lean Construction para otimização de processos, redução de desperdícios e aumento da produtividade no canteiro de obras, utilizando Scrum, Kanban e Scrumban."
     },
     {
-      title: "Metodologias Contemporâneas de Gestão",
-      description: "Aplicar princípios e técnicas de gestão da produção oriundos de metodologias contemporâneas, incluindo conceitos de Lean Construction e abordagens ágeis adaptadas ao contexto da construção civil. Compreender a lógica de eliminação de desperdícios, fluxo contínuo e melhoria contínua dos processos construtivos."
+      title: "Vistorias e Laudos Técnicos",
+      description: "Realizar vistorias, avaliações, perícias, laudos e pareceres técnicos com base em normas e critérios técnicos, incluindo diagnóstico de patologias e monitoramento de saúde estrutural."
     },
     {
-      title: "Controle de Qualidade e Conformidade Normativa",
-      description: "Implementar sistemas de controle de qualidade em obras de edificações, assegurando a conformidade dos serviços e materiais com as especificações de projeto e com as normas técnicas vigentes. Desenvolver competência para avaliação de desempenho das edificações conforme parâmetros normativos."
+      title: "Integração de Conhecimentos Técnicos",
+      description: "Integrar conhecimentos de fundações, estruturas de concreto armado e metálicas, sistemas pré-moldados, instalações e técnicas construtivas em soluções práticas e inovadoras."
     },
     {
-      title: "Atuação Ética, Responsável e Sustentável",
-      description: "Exercer a prática profissional pautada por princípios éticos e de responsabilidade socioambiental. Compreender as implicações ambientais e sociais das decisões técnicas e incorporar critérios de sustentabilidade nas escolhas de materiais, sistemas construtivos e processos de execução."
+      title: "Atuação Ética e Responsável",
+      description: "Tomar decisões éticas e responsáveis, considerando os impactos sociais, econômicos e ambientais dos projetos de construção. Atuar de forma colaborativa e multidisciplinar, liderando equipes."
     }
   ];
 
@@ -43,12 +44,16 @@ const OCurso = () => {
       <section className="hero-gradient py-16 md:py-24">
         <div className="section-container">
           <div className="max-w-3xl animate-fade-in">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
+            <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-base font-medium mb-6">
+              Especialização Lato Sensu
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
               O Curso
             </h1>
-            <p className="text-lg text-primary-foreground/90 leading-relaxed">
-              Programa de especialização voltado à formação de profissionais qualificados 
-              para atuar nos processos de planejamento, gestão e execução de obras de edificações.
+            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+              Programa de especialização voltado à formação de profissionais capacitados 
+              para liderar a transformação da construção civil com tecnologias emergentes 
+              e metodologias inovadoras.
             </p>
           </div>
         </div>
@@ -60,38 +65,45 @@ const OCurso = () => {
           <div className="max-w-4xl mx-auto">
             <SectionHeader
               title="Contexto e Concepção"
-              subtitle="Compreendendo as transformações do setor e a proposta formativa do programa."
+              subtitle="Um curso desenvolvido para atender às demandas de um mercado em transformação."
             />
             
+            <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
+              <p className="text-lg text-foreground font-medium mb-2">
+                Formação avançada para profissionais experientes
+              </p>
+              <p className="text-muted-foreground">
+                Este programa foi desenvolvido para atender à demanda crescente por profissionais 
+                preparados para lidar com as tecnologias emergentes e as exigências de um mercado 
+                competitivo e em constante evolução.
+              </p>
+            </div>
+            
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-              <p className="leading-relaxed">
-                O setor da construção civil tem passado por transformações significativas 
-                nas últimas décadas, impulsionadas pelo desenvolvimento de novos materiais, 
-                pela evolução dos sistemas construtivos e pela crescente incorporação de 
-                tecnologias digitais aos processos de projeto e produção. Esse cenário 
-                impõe aos profissionais do setor a necessidade de atualização contínua e 
-                de desenvolvimento de competências que transcendem a formação técnica 
-                tradicional.
+              <p className="leading-relaxed text-lg">
+                O setor da construção civil tem demonstrado um crescimento expressivo e contínuo, 
+                impulsionado pela recuperação econômica e novos investimentos em infraestrutura 
+                e edificações no Brasil. Esse crescimento reflete não apenas a demanda por novos 
+                empreendimentos, mas também a <strong>crescente complexidade das construções</strong>, 
+                exigindo profissionais cada vez mais qualificados e atualizados nas inovações 
+                tecnológicas e metodológicas da área.
               </p>
               
-              <p className="leading-relaxed">
-                A complexidade dos empreendimentos contemporâneos exige profissionais 
-                capazes de compreender e articular as múltiplas dimensões envolvidas na 
-                produção de edificações: desde os aspectos técnicos relacionados à 
-                execução das obras até as questões de planejamento, gestão de recursos 
-                e coordenação de equipes multidisciplinares. A integração entre tecnologia, 
-                gestão e execução constitui, portanto, um imperativo para a atuação 
-                qualificada no mercado atual.
+              <p className="leading-relaxed text-lg">
+                O mercado de construção civil tem se transformado com o uso de tecnologias 
+                avançadas, como o <strong>Building Information Modeling (BIM)</strong>, a 
+                integração de <strong>metodologias ágeis</strong>, e o uso de tecnologias de 
+                captura de realidade, como <strong>drones e laser scanners</strong>. Além disso, 
+                o <strong>monitoramento de saúde estrutural (SHM)</strong> tem se mostrado 
+                eficiente para garantir a durabilidade e a segurança das construções.
               </p>
               
-              <p className="leading-relaxed">
-                O curso de Pós-Graduação em Construção de Edifícios foi concebido para 
-                responder a essas demandas, oferecendo uma formação que alia rigor 
-                técnico-científico à orientação prática. A proposta pedagógica do programa 
-                está fundamentada na compreensão de que a qualificação do profissional 
-                da construção civil requer não apenas o domínio de conhecimentos específicos, 
-                mas também a capacidade de aplicá-los de forma crítica e criativa diante 
-                dos desafios concretos da prática profissional.
+              <p className="leading-relaxed text-lg">
+                O <strong>Lean Construction</strong>, com seu foco na eliminação de desperdícios 
+                e na otimização de processos, tem contribuído para a melhoria da eficiência e 
+                da qualidade na execução das obras. Essas inovações estão alterando a forma de 
+                planejar, executar e gerenciar obras, com ênfase na eficiência, precisão e 
+                sustentabilidade.
               </p>
             </div>
           </div>
@@ -115,8 +127,8 @@ const OCurso = () => {
                 <h3 className="text-lg font-semibold text-foreground">Modalidade</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                EAD com videoaulas, permitindo flexibilidade de acesso aos 
-                conteúdos e adequação à rotina profissional do aluno.
+                EAD com videoaulas, desenvolvido de forma assíncrona, permitindo 
+                flexibilidade e adequação à rotina profissional do aluno.
               </p>
             </div>
 
@@ -128,8 +140,8 @@ const OCurso = () => {
                 <h3 className="text-lg font-semibold text-foreground">Carga Horária</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                O programa contempla atividades acadêmicas distribuídas ao longo 
-                de aproximadamente 18 meses de duração.
+                360 horas distribuídas em 15 disciplinas de 24 horas cada, 
+                com material didático composto principalmente por videoaulas.
               </p>
             </div>
 
@@ -138,11 +150,11 @@ const OCurso = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Calendar className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Organização</h3>
+                <h3 className="text-lg font-semibold text-foreground">Metodologia</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Aulas realizadas aos sábados, permitindo a conciliação entre 
-                atividades acadêmicas e exercício profissional.
+                Ensino baseado na autonomia do aluno e interação no ambiente 
+                virtual, com videoaulas, leituras e tarefas práticas.
               </p>
             </div>
           </div>
@@ -167,7 +179,7 @@ const OCurso = () => {
               {objectives.map((objective, index) => (
                 <div key={index} className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border">
                   <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-0.5" />
-                  <p className="text-foreground leading-relaxed">{objective}</p>
+                  <p className="text-lg text-foreground leading-relaxed">{objective}</p>
                 </div>
               ))}
             </div>
@@ -186,31 +198,29 @@ const OCurso = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-card rounded-xl border border-border p-8">
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                <BarChart3 className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Planejamento e Gestão de Obras
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Abordagem de metodologias para planejamento, programação e controle 
-                de empreendimentos, incluindo gestão de custos, prazos, recursos e 
-                qualidade. Ênfase em técnicas contemporâneas de gestão da produção 
-                aplicadas à construção civil.
-              </p>
-            </div>
-
-            <div className="bg-card rounded-xl border border-border p-8">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
                 <Cpu className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Tecnologias Digitais
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Estudo e aplicação de tecnologias digitais no contexto da construção 
-                civil, com destaque para ferramentas de modelagem da informação da 
-                construção (BIM), sistemas de gestão informatizada e recursos para 
-                documentação e controle de obras.
+                BIM (Building Information Modeling), tecnologias de captura de realidade 
+                com drones, laser scanners e câmeras 360°, leitura e compatibilização 
+                de projetos digitais, e monitoramento de saúde estrutural (SHM).
+              </p>
+            </div>
+
+            <div className="bg-card rounded-xl border border-border p-8">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <BarChart3 className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">
+                Gestão e Metodologias
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Metodologias ágeis (Scrum, Kanban, Scrumban), Lean Construction, 
+                gestão aplicada a projetos, planejamento, orçamento e análise 
+                financeira de obras com uso de ferramentas como Power BI.
               </p>
             </div>
 
@@ -222,10 +232,9 @@ const OCurso = () => {
                 Execução e Controle
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Análise dos processos de execução de obras, abrangendo sistemas 
-                construtivos, técnicas de execução, controle de qualidade e 
-                conformidade normativa. Discussão sobre segurança do trabalho e 
-                gestão de equipes em canteiro de obras.
+                Fundações, estruturas de concreto armado e metálicas, sistemas 
+                pré-moldados, tecnologia e processos construtivos, patologias, 
+                manutenção e reforma predial.
               </p>
             </div>
           </div>
@@ -255,7 +264,7 @@ const OCurso = () => {
                   <div className="flex items-start gap-4">
                     <span className="text-primary font-semibold text-xl flex-shrink-0">{String(index + 1).padStart(2, '0')}</span>
                     <div>
-                      <h4 className="text-foreground font-semibold mb-2">{competency.title}</h4>
+                      <h4 className="text-lg text-foreground font-semibold mb-2">{competency.title}</h4>
                       <p className="text-muted-foreground leading-relaxed">{competency.description}</p>
                     </div>
                   </div>
@@ -266,15 +275,26 @@ const OCurso = () => {
         </div>
       </section>
 
-      {/* Note Section */}
-      <section className="py-12 hero-gradient">
+      {/* CTA Section */}
+      <section className="py-16 md:py-20 hero-gradient">
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-primary-foreground/90 leading-relaxed">
-              Para informações detalhadas sobre requisitos de ingresso, documentação 
-              e processo seletivo, consulte os canais oficiais da Pontifícia 
-              Universidade Católica de Minas Gerais.
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
+              Transforme Sua Carreira
+            </h2>
+            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
+              Torne-se um especialista preparado para liderar a transformação da 
+              construção civil com tecnologias emergentes e metodologias inovadoras.
             </p>
+            <a
+              href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground inline-flex items-center gap-2 text-lg px-8 py-4"
+            >
+              Inscreva-se Agora
+              <ExternalLink className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>

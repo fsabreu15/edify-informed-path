@@ -8,15 +8,36 @@ import {
   ArrowRight,
   Target,
   Clock,
-  Award
+  Award,
+  Cpu,
+  BarChart3,
+  Wrench,
+  ExternalLink
 } from "lucide-react";
 import heroImage from "@/assets/hero-construction.jpg";
 
 const Index = () => {
+  const technologies = [
+    "Building Information Modeling (BIM)",
+    "Structural Health Monitoring (SHM)",
+    "Drones e Laser Scanners",
+    "Lean Construction",
+    "Metodologias Ágeis"
+  ];
+
+  const targetAudience = [
+    "Engenheiros Civis",
+    "Arquitetos e Urbanistas",
+    "Engenheiros de Produção",
+    "Demais engenheiros",
+    "Tecnólogos em áreas de engenharia",
+    "Administradores e profissionais de áreas afins"
+  ];
+
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center">
+      <section className="relative min-h-[75vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -36,19 +57,18 @@ const Index = () => {
               Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes do setor.
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl">
-              Programa avançado de especialização que integra tecnologias construtivas contemporâneas, 
-              gestão estratégica de obras e processos de execução, capacitando profissionais 
-              para enfrentar os desafios complexos da construção civil atual.
+              Programa avançado de especialização que integra tecnologias emergentes como BIM, SHM, drones e 
+              metodologias ágeis, preparando profissionais para liderar a transformação da construção civil.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
                 href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center gap-2"
+                className="btn-primary inline-flex items-center gap-2 text-lg"
               >
                 Inscreva-se Agora
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5" />
               </a>
               <Link to="/o-curso" className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground">
                 Conheça o Curso
@@ -61,14 +81,14 @@ const Index = () => {
       {/* Quick Info Section */}
       <section className="py-16 md:py-20 section-alt">
         <div className="section-container">
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             <div className="flex items-center gap-4 p-6 bg-card rounded-lg border border-border">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Clock className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Duração</p>
-                <p className="text-lg font-semibold text-foreground">18 meses</p>
+                <p className="text-sm text-muted-foreground">Carga Horária</p>
+                <p className="text-lg font-semibold text-foreground">360 horas</p>
               </div>
             </div>
             
@@ -79,6 +99,16 @@ const Index = () => {
               <div>
                 <p className="text-sm text-muted-foreground">Modalidade</p>
                 <p className="text-lg font-semibold text-foreground">EAD com Videoaulas</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-4 p-6 bg-card rounded-lg border border-border">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Disciplinas</p>
+                <p className="text-lg font-semibold text-foreground">15 disciplinas</p>
               </div>
             </div>
             
@@ -95,14 +125,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       {/* About Section */}
       <section className="py-16 md:py-24">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
               title="Sobre o Programa"
-              subtitle="Formação especializada para profissionais que buscam aprofundamento técnico e atualização nas práticas construtivas."
+              subtitle="Formação prática, atualizada e alinhada às demandas do setor da construção civil."
             />
             
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
@@ -118,61 +147,71 @@ const Index = () => {
               </div>
 
               <p className="leading-relaxed text-lg">
-                O curso de Pós-Graduação <em>Lato Sensu</em> em Construção de Edifícios, 
-                oferecido pela Pontifícia Universidade Católica de Minas Gerais na modalidade 
-                <strong> EAD com videoaulas</strong>, constitui um programa de especialização 
-                destinado a profissionais graduados em Engenharia Civil, Arquitetura e Urbanismo, 
-                Tecnologia em Construção de Edifícios e áreas afins que buscam aprofundamento 
-                técnico-científico no campo da construção civil.
+                O curso de Pós-Graduação em Construção de Edifícios oferece uma formação prática, 
+                atualizada e alinhada às demandas do setor, voltada tanto para profissionais que 
+                já atuam na construção civil quanto para aqueles que desejam ingressar na área. 
+                Com foco na aplicação de novas tecnologias e metodologias de gestão, o curso 
+                proporciona uma visão abrangente dos processos da construção contemporânea.
               </p>
               
               <p className="leading-relaxed text-lg">
-                A proposta pedagógica do programa está fundamentada na integração entre 
-                conhecimentos teóricos e aplicações práticas, abordando de forma sistemática 
-                os principais aspectos relacionados à tecnologia, gestão e processos 
-                construtivos. O currículo contempla disciplinas que tratam desde os 
-                fundamentos dos sistemas construtivos até questões contemporâneas como 
-                sustentabilidade, desempenho das edificações e inovação tecnológica.
+                O programa aborda temas como <strong>BIM (Building Information Modeling)</strong>, 
+                <strong> Lean Construction</strong>, gestão de obras, práticas sustentáveis e 
+                <strong> monitoramento de saúde estrutural (SHM)</strong>, essencial para garantir 
+                a durabilidade e a segurança das edificações ao longo do tempo.
               </p>
               
               <p className="leading-relaxed text-lg">
-                A formação proposta visa capacitar o profissional para atuar de forma 
-                qualificada nas diversas etapas do processo de produção de edifícios, 
-                incluindo planejamento, execução, controle de qualidade e gestão de obras. 
-                O programa busca desenvolver competências técnicas e gerenciais que 
-                permitam ao egresso responder às demandas atuais do setor da construção civil, 
-                caracterizado pela crescente complexidade dos empreendimentos e pela 
-                necessidade de incorporação de novas tecnologias e práticas sustentáveis.
+                Ao concluir a especialização, o profissional estará capacitado para gerenciar, 
+                planejar e executar obras de edificações com foco na sustentabilidade, eficiência 
+                e inovação, estando preparado para os desafios do setor da construção civil com 
+                suas novas tecnologias.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Technologies Section */}
       <section className="py-16 md:py-24 section-alt">
         <div className="section-container">
           <SectionHeader
-            title="Eixos de Formação"
-            subtitle="O programa estrutura-se em torno de três eixos principais que orientam a formação do especialista em construção de edifícios."
+            title="Tecnologias e Metodologias"
+            subtitle="O curso incorpora as mais avançadas tecnologias e metodologias do setor da construção civil."
           />
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <FeatureCard
-              icon={Building2}
-              title="Tecnologia Construtiva"
-              description="Estudo aprofundado dos sistemas e métodos construtivos, materiais de construção e técnicas de execução aplicadas à construção de edifícios."
+              icon={Cpu}
+              title="Tecnologias Digitais"
+              description="BIM (Building Information Modeling), SHM (Structural Health Monitoring), drones, laser scanners e câmeras 360° aplicados à construção civil."
             />
             <FeatureCard
-              icon={Target}
-              title="Gestão de Obras"
-              description="Desenvolvimento de competências para planejamento, coordenação e controle de empreendimentos, com ênfase em produtividade e qualidade."
+              icon={BarChart3}
+              title="Gestão e Metodologias Ágeis"
+              description="Lean Construction, Scrum, Kanban e Scrumban para otimização de processos, redução de desperdícios e aumento da produtividade."
             />
             <FeatureCard
-              icon={BookOpen}
-              title="Processos Construtivos"
-              description="Análise dos processos de produção na construção civil, visando à racionalização, eficiência e adequação às normas técnicas vigentes."
+              icon={Wrench}
+              title="Execução e Controle"
+              description="Fundações, estruturas de concreto e metálicas, sistemas pré-moldados, planejamento, orçamentação e análise financeira de obras."
             />
+          </div>
+
+          <div className="bg-card rounded-xl border border-border p-8">
+            <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
+              Principais Tecnologias Abordadas
+            </h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {technologies.map((tech, index) => (
+                <span 
+                  key={index}
+                  className="px-4 py-2 bg-primary/10 text-primary rounded-full text-base font-medium"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -184,26 +223,21 @@ const Index = () => {
             <div>
               <SectionHeader
                 title="Público-Alvo"
-                subtitle="Profissionais graduados que atuam ou pretendem atuar no setor da construção de edifícios."
+                subtitle="Profissionais com formação superior que buscam diferenciação no mercado da construção civil."
               />
               
               <ul className="space-y-4">
-                {[
-                  "Engenheiros Civis",
-                  "Arquitetos e Urbanistas",
-                  "Tecnólogos em Construção de Edifícios",
-                  "Profissionais graduados em áreas afins à construção civil"
-                ].map((item, index) => (
+                {targetAudience.map((item, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-                    <span className="text-foreground">{item}</span>
+                    <span className="text-lg text-foreground">{item}</span>
                   </li>
                 ))}
               </ul>
               
               <div className="mt-8">
                 <Link to="/o-curso" className="btn-primary inline-flex items-center gap-2">
-                  Objetivos e Competências
+                  Ver Objetivos e Competências
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -211,23 +245,75 @@ const Index = () => {
             
             <div className="bg-card rounded-xl border border-border p-8">
               <h3 className="text-xl font-semibold text-foreground mb-4">
-                Integração Teoria e Prática
+                Áreas de Atuação do Egresso
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                A proposta metodológica do curso privilegia a articulação entre 
-                fundamentos teóricos e sua aplicação em situações concretas da prática 
-                profissional. As disciplinas são conduzidas de modo a proporcionar ao 
-                aluno a compreensão dos conceitos técnicos e, simultaneamente, a 
-                capacidade de aplicá-los na resolução de problemas reais do canteiro 
-                de obras.
+                Os profissionais estarão aptos a atuar em diversos segmentos da construção civil, 
+                ocupando posições estratégicas em:
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Essa abordagem prepara o profissional para atuar de forma crítica e 
-                propositiva diante dos desafios que caracterizam a construção civil 
-                contemporânea, contribuindo para a qualificação do setor e para a 
-                melhoria contínua dos processos construtivos.
-              </p>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Empresas públicas e privadas, construtoras e incorporadoras</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Escritórios de engenharia e arquitetura</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Startups de tecnologia da construção e consultorias especializadas</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>Empreendedorismo e atuação autônoma</span>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Disciplines Preview */}
+      <section className="py-16 md:py-24 section-alt">
+        <div className="section-container">
+          <SectionHeader
+            title="Estrutura Curricular"
+            subtitle="15 disciplinas de 24 horas cada, totalizando 360 horas de formação especializada."
+          />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {[
+              "Introdução à Building Information Modeling",
+              "Metodologias Ágeis na Prática",
+              "Gestão Aplicada a Projetos",
+              "Tecnologia e Processos na Construção I e II",
+              "Tecnologias de Captura de Realidade",
+              "Lean Construction e Tecnologia BIM",
+              "Fundações para Edifícios",
+              "Estruturas de Concreto e Pré-Moldados",
+              "Planejamento e Orçamento de Obras",
+              "Compatibilização de Projetos BIM",
+              "Projeto de Estruturas Metálicas",
+              "Patologias nas Edificações"
+            ].map((discipline, index) => (
+              <div 
+                key={index} 
+                className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border"
+              >
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-4 h-4 text-primary" />
+                </div>
+                <span className="text-foreground">{discipline}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <Link to="/estrutura-curricular" className="btn-outline inline-flex items-center gap-2">
+              Ver Grade Curricular Completa
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -249,7 +335,7 @@ const Index = () => {
             className="btn-outline bg-primary-foreground/10 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/20 hover:text-primary-foreground inline-flex items-center gap-2 text-lg px-8 py-4"
           >
             Acessar Portal de Inscrições
-            <ArrowRight className="w-5 h-5" />
+            <ExternalLink className="w-5 h-5" />
           </a>
         </div>
       </section>
