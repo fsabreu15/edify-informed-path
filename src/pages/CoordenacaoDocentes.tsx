@@ -190,7 +190,7 @@ const CoordenacaoDocentes = () => {
               subtitle="O curso está vinculado ao Instituto Politécnico da PUC Minas."
             />
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-card rounded-xl border border-border p-8">
                 <h3 className="text-xl font-semibold text-foreground mb-4">
                   Instituto Politécnico (IPUC)
@@ -211,6 +211,27 @@ const CoordenacaoDocentes = () => {
                   responsável pelos programas de pós-graduação lato sensu da instituição, 
                   com infraestrutura consolidada para ensino a distância.
                 </p>
+              </div>
+            </div>
+
+            {/* Disclaimer about non-institutional site */}
+            <div className="bg-accent/10 border border-accent/30 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    Sobre Este Site
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Este site é uma <strong>página informativa complementar</strong>, desenvolvida 
+                    para divulgação do curso de Pós-Graduação em Construção de Edifícios. 
+                    <strong> Não se trata de um site institucional da PUC Minas</strong>. 
+                    Para inscrições, valores, documentação e informações oficiais, 
+                    consulte sempre os canais oficiais da instituição.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
