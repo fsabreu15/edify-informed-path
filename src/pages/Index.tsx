@@ -135,25 +135,40 @@ const Index = () => {
             />
             
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-              <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-                <p className="text-lg text-foreground font-medium mb-2">
+              <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-8">
+                <p className="text-xl text-foreground font-bold mb-2">
                   Este não é um curso básico.
                 </p>
+                <p className="text-foreground text-lg mb-4">
+                  Trata-se de uma pós-graduação de <strong>alto nível</strong>, projetada para o aprimoramento 
+                  profissional de engenheiros e arquitetos que já atuam no mercado.
+                </p>
                 <p className="text-muted-foreground">
-                  Trata-se de uma pós-graduação de alto nível, projetada para o aprimoramento 
-                  profissional de engenheiros e arquitetos que já atuam no mercado e buscam 
-                  atualização técnica avançada e diferenciação competitiva.
+                  Mesmo profissionais experientes encontrarão conteúdo aprofundado e atualizado 
+                  sobre tecnologias emergentes, metodologias inovadoras e práticas avançadas 
+                  que estão transformando o setor da construção civil.
                 </p>
               </div>
 
-              <p className="leading-relaxed text-lg">
-                O curso de Pós-Graduação em Construção de Edifícios oferece uma formação prática, 
-                atualizada e alinhada às demandas do setor, voltada tanto para profissionais que 
-                já atuam na construção civil quanto para aqueles que desejam ingressar na área. 
-                Com foco na aplicação de novas tecnologias e metodologias de gestão, o curso 
-                proporciona uma visão abrangente dos processos da construção contemporânea.
-              </p>
-              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-card rounded-xl border border-border p-6">
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">Para quem busca diferenciação</h4>
+                  <p className="text-muted-foreground">
+                    Profissionais que desejam se destacar no mercado competitivo através do 
+                    domínio de ferramentas como <strong>BIM, SHM, drones</strong> e metodologias 
+                    ágeis aplicadas à construção.
+                  </p>
+                </div>
+                <div className="bg-card rounded-xl border border-border p-6">
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">Abordagem técnico-científica</h4>
+                  <p className="text-muted-foreground">
+                    Conteúdo que vai além do superficial, com aprofundamento em temas como 
+                    monitoramento de saúde estrutural, patologias, Lean Construction e 
+                    gestão avançada de obras.
+                  </p>
+                </div>
+              </div>
+
               <p className="leading-relaxed text-lg">
                 O programa aborda temas como <strong>BIM (Building Information Modeling)</strong>, 
                 <strong> Lean Construction</strong>, gestão de obras, práticas sustentáveis e 

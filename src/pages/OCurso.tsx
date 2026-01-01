@@ -68,14 +68,18 @@ const OCurso = () => {
               subtitle="Um curso desenvolvido para atender às demandas de um mercado em transformação."
             />
             
-            <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg mb-8">
-              <p className="text-lg text-foreground font-medium mb-2">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-8">
+              <p className="text-xl text-foreground font-bold mb-2">
                 Formação avançada para profissionais experientes
               </p>
+              <p className="text-foreground text-lg mb-4">
+                Este programa foi desenvolvido para profissionais que buscam ir além do conhecimento 
+                básico e dominar as tecnologias de ponta do setor.
+              </p>
               <p className="text-muted-foreground">
-                Este programa foi desenvolvido para atender à demanda crescente por profissionais 
-                preparados para lidar com as tecnologias emergentes e as exigências de um mercado 
-                competitivo e em constante evolução.
+                Mesmo engenheiros e arquitetos com anos de experiência encontrarão conteúdo 
+                aprofundado sobre BIM, SHM, drones, Lean Construction e outras inovações 
+                que estão transformando a construção civil brasileira.
               </p>
             </div>
             

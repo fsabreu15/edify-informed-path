@@ -16,14 +16,14 @@ const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-40 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="section-container">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex flex-col">
-            <span className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
+        <div className="flex items-center justify-between h-18 md:h-22 py-3">
+          <Link to="/" className="flex flex-col group">
+            <span className="text-2xl md:text-3xl lg:text-4xl font-display font-bold gradient-text">
               Pós-Graduação
             </span>
-            <span className="text-sm md:text-base text-muted-foreground -mt-1">
+            <span className="text-base md:text-lg text-muted-foreground -mt-1 group-hover:text-foreground transition-colors">
               Construção de Edifícios
             </span>
           </Link>
@@ -34,7 +34,7 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={isActive(item.path) ? "nav-link-active" : "nav-link"}
+                className={`relative ${isActive(item.path) ? "nav-link-active" : "nav-link"} after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left`}
               >
                 {item.label}
               </Link>
@@ -43,16 +43,16 @@ const Header = () => {
               href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
               target="_blank"
               rel="noopener noreferrer"
-              className="nav-link flex items-center gap-1"
+              className="btn-primary flex items-center gap-2 text-sm py-2.5"
             >
-              Inscrições
+              Inscreva-se
               <ExternalLink className="w-4 h-4" />
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-2 text-foreground hover:bg-muted rounded-lg transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Menu"
           >
@@ -63,12 +63,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="lg:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={isActive(item.path) ? "nav-link-active" : "nav-link"}
+                  className={`py-2 px-3 rounded-lg transition-colors ${isActive(item.path) ? "bg-primary/10 text-primary font-semibold" : "text-foreground hover:bg-muted"}`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -78,9 +78,9 @@ const Header = () => {
                 href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="nav-link flex items-center gap-1"
+                className="btn-primary flex items-center justify-center gap-2 mt-2"
               >
-                Inscrições
+                Inscreva-se
                 <ExternalLink className="w-4 h-4" />
               </a>
             </div>
