@@ -75,7 +75,7 @@ const CoordenacaoDocentes = () => {
         <div className="section-container">
           <div className="max-w-3xl animate-fade-in">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-base font-medium mb-6">
-              Instituto Politécnico (IPUC) • Departamento de Engenharia Civil
+              Pós-Graduação • Construção de Edifícios
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
               Coordenação e Docentes
