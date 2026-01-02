@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { MessageCircle, X, Send, ExternalLink, Sparkles, GraduationCap } from "lucide-react";
+import { MessageCircle, X, Send, Sparkles } from "lucide-react";
 
 interface Message {
   id: number;
   text: string;
   isBot: boolean;
 }
+
+const ENROLLMENT_LINK = "https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas";
 
 const faqData = [
   {
@@ -30,11 +32,11 @@ const faqData = [
   },
   {
     question: "Há desconto para ex-alunos?",
-    answer: "Sim! Ex-alunos da PUC Minas têm desconto especial nas mensalidades. Para conferir valores e condições, acesse o portal oficial de inscrições da PUC Minas."
+    answer: `Sim! Ex-alunos da PUC Minas têm desconto especial nas mensalidades. Acesse o portal oficial para conferir valores e condições: ${ENROLLMENT_LINK}`
   },
   {
     question: "Como me inscrevo?",
-    answer: "As inscrições são feitas exclusivamente pelo portal oficial da PUC Minas. Clique no botão abaixo para acessar a página de inscrições com todas as informações sobre valores, datas e requisitos."
+    answer: `As inscrições são feitas exclusivamente pelo portal oficial da PUC Minas. Acesse: ${ENROLLMENT_LINK}`
   }
 ];
 
@@ -87,7 +89,7 @@ const Chatbot = () => {
       return faqData[5].answer;
     }
 
-    return "Desculpe, não encontrei uma resposta específica para sua pergunta. Posso ajudar com informações sobre: público-alvo, carga horária, metodologia das aulas, TCC, descontos para ex-alunos e como se inscrever. Para informações detalhadas, acesse o portal oficial de inscrições da PUC Minas.";
+    return `Desculpe, não encontrei uma resposta específica para sua pergunta. Posso ajudar com informações sobre: público-alvo, carga horária, metodologia das aulas, TCC, descontos para ex-alunos e como se inscrever. Para inscrições e informações oficiais, acesse: ${ENROLLMENT_LINK}`;
   };
 
   const handleSend = () => {
@@ -226,18 +228,6 @@ const Chatbot = () => {
                 <Send className="w-4 h-4" />
               </button>
             </div>
-            
-            {/* Official Enrollment Button */}
-            <a
-              href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 mt-3 py-2.5 px-4 bg-primary text-primary-foreground rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
-            >
-              <GraduationCap className="w-4 h-4" />
-              Fazer Inscrição
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
           </div>
         </div>
       </div>

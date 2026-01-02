@@ -60,7 +60,7 @@ const Index = () => {
               Pós-Graduação em Construção de Edifícios
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed max-w-2xl font-medium">
-              Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes do setor.
+              Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes — e também para recém-formados que buscam evolução rápida na carreira.
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl">
               Programa avançado de especialização que integra tecnologias emergentes como BIM, SHM, drones e 
@@ -85,7 +85,7 @@ const Index = () => {
       </section>
 
       {/* Quick Info Section */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-12 section-alt">
         <div className="section-container">
           <div className="grid md:grid-cols-4 gap-6">
             <div className="flex items-center gap-4 p-6 bg-card rounded-lg border border-border">
@@ -132,7 +132,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -176,38 +176,57 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Image Gallery */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <img 
-                    src={constructionSite} 
-                    alt="Canteiro de obras em construção" 
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
-                  />
+            {/* Modern Image Gallery */}
+            <div className="relative">
+              {/* Main featured image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                <img 
+                  src={constructionSite} 
+                  alt="Canteiro de obras em construção" 
+                  className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <span className="inline-block px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full mb-2">
+                    Execução de Obras
+                  </span>
+                  <p className="text-primary-foreground font-medium">
+                    Acompanhamento completo de canteiros de obra
+                  </p>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-lg">
+              </div>
+              
+              {/* Floating gallery cards */}
+              <div className="grid grid-cols-3 gap-3 mt-4">
+                <div className="relative rounded-xl overflow-hidden shadow-lg group aspect-square">
                   <img 
                     src={masonryWork} 
                     alt="Execução de alvenaria" 
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <span className="text-foreground text-xs font-medium">Alvenaria</span>
+                  </div>
                 </div>
-              </div>
-              <div className="space-y-4 pt-8">
-                <div className="rounded-xl overflow-hidden shadow-lg">
+                <div className="relative rounded-xl overflow-hidden shadow-lg group aspect-square">
                   <img 
                     src={formworkRebar} 
                     alt="Formas e armaduras" 
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <span className="text-foreground text-xs font-medium">Estruturas</span>
+                  </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-lg">
+                <div className="relative rounded-xl overflow-hidden shadow-lg group aspect-square">
                   <img 
                     src={plasteringWork} 
                     alt="Execução de revestimento" 
-                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <span className="text-foreground text-xs font-medium">Revestimentos</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,7 +235,7 @@ const Index = () => {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-16 md:py-24 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
@@ -279,7 +298,7 @@ const Index = () => {
       </section>
 
       {/* Target Audience Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -343,7 +362,7 @@ const Index = () => {
       </section>
 
       {/* Disciplines Preview */}
-      <section className="py-16 md:py-24 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <SectionHeader
             title="Estrutura Curricular"
