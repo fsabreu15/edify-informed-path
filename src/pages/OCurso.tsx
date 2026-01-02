@@ -1,6 +1,9 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { Target, Lightbulb, CheckCircle, MapPin, Calendar, Clock, Cpu, Users, BarChart3, ArrowRight, ExternalLink } from "lucide-react";
+import constructionSite from "@/assets/construction-site.jpg";
+import plasteringWork from "@/assets/plastering-work.jpg";
+import masonryWork from "@/assets/masonry-work.jpg";
 
 const OCurso = () => {
   const objectives = [
@@ -41,8 +44,14 @@ const OCurso = () => {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="hero-gradient py-16 md:py-24">
-        <div className="section-container">
+      <section className="relative min-h-[50vh] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${constructionSite})` }}
+        >
+          <div className="absolute inset-0 hero-gradient opacity-90" />
+        </div>
+        <div className="section-container relative z-10 py-16 md:py-24">
           <div className="max-w-3xl animate-fade-in">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-base font-medium mb-6">
               Especialização Lato Sensu
@@ -117,49 +126,71 @@ const OCurso = () => {
       {/* Program Info Cards */}
       <section className="py-16 md:py-20 section-alt">
         <div className="section-container">
-          <SectionHeader
-            title="Informações do Programa"
-            subtitle="Características gerais da organização acadêmica do curso."
-          />
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card-academic p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-primary" />
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <SectionHeader
+                title="Informações do Programa"
+                subtitle="Características gerais da organização acadêmica do curso."
+              />
+              
+              <div className="grid gap-4">
+                <div className="card-academic p-5">
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Modalidade</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    EAD com videoaulas, desenvolvido de forma assíncrona, permitindo 
+                    flexibilidade e adequação à rotina profissional do aluno.
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Modalidade</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                EAD com videoaulas, desenvolvido de forma assíncrona, permitindo 
-                flexibilidade e adequação à rotina profissional do aluno.
-              </p>
-            </div>
 
-            <div className="card-academic p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-primary" />
+                <div className="card-academic p-5">
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Clock className="w-5 h-5 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Carga Horária</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    360 horas distribuídas em 15 disciplinas de 24 horas cada, 
+                    com material didático composto principalmente por videoaulas.
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Carga Horária</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                360 horas distribuídas em 15 disciplinas de 24 horas cada, 
-                com material didático composto principalmente por videoaulas.
-              </p>
-            </div>
 
-            <div className="card-academic p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Calendar className="w-5 h-5 text-primary" />
+                <div className="card-academic p-5">
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Calendar className="w-5 h-5 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Metodologia</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Ensino baseado na autonomia do aluno e interação no ambiente 
+                    virtual, com videoaulas, leituras e tarefas práticas.
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">Metodologia</h3>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
-                Ensino baseado na autonomia do aluno e interação no ambiente 
-                virtual, com videoaulas, leituras e tarefas práticas.
-              </p>
+            </div>
+            
+            {/* Image */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src={plasteringWork} 
+                  alt="Execução de revestimento" 
+                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg mt-8">
+                <img 
+                  src={masonryWork} 
+                  alt="Execução de alvenaria" 
+                  className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -14,7 +14,13 @@ import {
   Wrench,
   ExternalLink
 } from "lucide-react";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/building-facade.jpg";
+import constructionSite from "@/assets/construction-site.jpg";
+import masonryWork from "@/assets/masonry-work.jpg";
+import formworkRebar from "@/assets/formwork-rebar.jpg";
+import plasteringWork from "@/assets/plastering-work.jpg";
+import foundationWork from "@/assets/foundation-work.jpg";
+import bimModel from "@/assets/bim-model.jpg";
 
 const Index = () => {
   const technologies = [
@@ -128,60 +134,82 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16 md:py-24">
         <div className="section-container">
-          <div className="max-w-4xl mx-auto">
-            <SectionHeader
-              title="Sobre o Programa"
-              subtitle="Formação prática, atualizada e alinhada às demandas do setor da construção civil."
-            />
-            
-            <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-              <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-8">
-                <p className="text-xl text-foreground font-bold mb-2">
-                  Este não é um curso básico.
-                </p>
-                <p className="text-foreground text-lg mb-4">
-                  Trata-se de uma pós-graduação de <strong>alto nível</strong>, projetada para o aprimoramento 
-                  profissional de engenheiros e arquitetos que já atuam no mercado.
-                </p>
-                <p className="text-muted-foreground">
-                  Mesmo profissionais experientes encontrarão conteúdo aprofundado e atualizado 
-                  sobre tecnologias emergentes, metodologias inovadoras e práticas avançadas 
-                  que estão transformando o setor da construção civil.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-card rounded-xl border border-border p-6">
-                  <h4 className="font-semibold text-foreground mb-3 text-lg">Para quem busca diferenciação</h4>
-                  <p className="text-muted-foreground">
-                    Profissionais que desejam se destacar no mercado competitivo através do 
-                    domínio de ferramentas como <strong>BIM, SHM, drones</strong> e metodologias 
-                    ágeis aplicadas à construção.
-                  </p>
-                </div>
-                <div className="bg-card rounded-xl border border-border p-6">
-                  <h4 className="font-semibold text-foreground mb-3 text-lg">Abordagem técnico-científica</h4>
-                  <p className="text-muted-foreground">
-                    Conteúdo que vai além do superficial, com aprofundamento em temas como 
-                    monitoramento de saúde estrutural, patologias, Lean Construction e 
-                    gestão avançada de obras.
-                  </p>
-                </div>
-              </div>
-
-              <p className="leading-relaxed text-lg">
-                O programa aborda temas como <strong>BIM (Building Information Modeling)</strong>, 
-                <strong> Lean Construction</strong>, gestão de obras, práticas sustentáveis e 
-                <strong> monitoramento de saúde estrutural (SHM)</strong>, essencial para garantir 
-                a durabilidade e a segurança das edificações ao longo do tempo.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <SectionHeader
+                title="Sobre o Programa"
+                subtitle="Formação prática, atualizada e alinhada às demandas do setor da construção civil."
+              />
               
-              <p className="leading-relaxed text-lg">
-                Ao concluir a especialização, o profissional estará capacitado para gerenciar, 
-                planejar e executar obras de edificações com foco na sustentabilidade, eficiência 
-                e inovação, estando preparado para os desafios do setor da construção civil com 
-                suas novas tecnologias.
-              </p>
+              <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+                <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-8">
+                  <p className="text-xl text-foreground font-bold mb-2">
+                    Este não é um curso básico.
+                  </p>
+                  <p className="text-foreground text-lg mb-4">
+                    Trata-se de uma pós-graduação de <strong>alto nível</strong>, projetada para o aprimoramento 
+                    profissional de engenheiros e arquitetos que já atuam no mercado.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Mesmo profissionais experientes encontrarão conteúdo aprofundado e atualizado 
+                    sobre tecnologias emergentes, metodologias inovadoras e práticas avançadas 
+                    que estão transformando o setor da construção civil.
+                  </p>
+                </div>
+
+                <div className="grid gap-4">
+                  <div className="bg-card rounded-xl border border-border p-5">
+                    <h4 className="font-semibold text-foreground mb-2 text-lg">Para quem busca diferenciação</h4>
+                    <p className="text-muted-foreground text-base">
+                      Profissionais que desejam se destacar através do domínio de 
+                      ferramentas como <strong>BIM, SHM, drones</strong> e metodologias ágeis.
+                    </p>
+                  </div>
+                  <div className="bg-card rounded-xl border border-border p-5">
+                    <h4 className="font-semibold text-foreground mb-2 text-lg">Abordagem técnico-científica</h4>
+                    <p className="text-muted-foreground text-base">
+                      Conteúdo aprofundado em monitoramento de saúde estrutural, 
+                      patologias, Lean Construction e gestão avançada de obras.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Image Gallery */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src={constructionSite} 
+                    alt="Canteiro de obras em construção" 
+                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src={masonryWork} 
+                    alt="Execução de alvenaria" 
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="space-y-4 pt-8">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src={formworkRebar} 
+                    alt="Formas e armaduras" 
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src={plasteringWork} 
+                    alt="Execução de revestimento" 
+                    className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -190,27 +218,46 @@ const Index = () => {
       {/* Technologies Section */}
       <section className="py-16 md:py-24 section-alt">
         <div className="section-container">
-          <SectionHeader
-            title="Tecnologias e Metodologias"
-            subtitle="O curso incorpora as mais avançadas tecnologias e metodologias do setor da construção civil."
-          />
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <FeatureCard
-              icon={Cpu}
-              title="Tecnologias Digitais"
-              description="BIM (Building Information Modeling), SHM (Structural Health Monitoring), drones, laser scanners e câmeras 360° aplicados à construção civil."
-            />
-            <FeatureCard
-              icon={BarChart3}
-              title="Gestão e Metodologias Ágeis"
-              description="Lean Construction, Scrum, Kanban e Scrumban para otimização de processos, redução de desperdícios e aumento da produtividade."
-            />
-            <FeatureCard
-              icon={Wrench}
-              title="Execução e Controle"
-              description="Fundações, estruturas de concreto e metálicas, sistemas pré-moldados, planejamento, orçamentação e análise financeira de obras."
-            />
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <SectionHeader
+                title="Tecnologias e Metodologias"
+                subtitle="O curso incorpora as mais avançadas tecnologias e metodologias do setor da construção civil."
+              />
+              
+              <div className="grid gap-6">
+                <FeatureCard
+                  icon={Cpu}
+                  title="Tecnologias Digitais"
+                  description="BIM (Building Information Modeling), SHM (Structural Health Monitoring), drones, laser scanners e câmeras 360° aplicados à construção civil."
+                />
+                <FeatureCard
+                  icon={BarChart3}
+                  title="Gestão e Metodologias Ágeis"
+                  description="Lean Construction, Scrum, Kanban e Scrumban para otimização de processos, redução de desperdícios e aumento da produtividade."
+                />
+                <FeatureCard
+                  icon={Wrench}
+                  title="Execução e Controle"
+                  description="Fundações, estruturas de concreto e metálicas, sistemas pré-moldados, planejamento, orçamentação e análise financeira de obras."
+                />
+              </div>
+            </div>
+            
+            {/* BIM Model Image */}
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <img 
+                  src={bimModel} 
+                  alt="Modelo BIM de edifício" 
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-6 py-3 rounded-xl shadow-lg">
+                <p className="font-bold text-lg">Modelagem BIM</p>
+                <p className="text-sm opacity-90">Tecnologia de ponta</p>
+              </div>
+            </div>
           </div>
 
           <div className="bg-card rounded-xl border border-border p-8">
@@ -258,32 +305,38 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="bg-card rounded-xl border border-border p-8">
-              <h3 className="text-xl font-semibold text-foreground mb-4">
-                Áreas de Atuação do Egresso
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Os profissionais estarão aptos a atuar em diversos segmentos da construção civil, 
-                ocupando posições estratégicas em:
-              </p>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Empresas públicas e privadas, construtoras e incorporadoras</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Escritórios de engenharia e arquitetura</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Startups de tecnologia da construção e consultorias especializadas</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Building2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Empreendedorismo e atuação autônoma</span>
-                </li>
-              </ul>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src={foundationWork} 
+                  alt="Execução de fundações" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent rounded-2xl" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  Áreas de Atuação
+                </h3>
+                <ul className="space-y-2 text-foreground/90">
+                  <li className="flex items-center gap-2 text-sm">
+                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Construtoras e incorporadoras</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-sm">
+                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Escritórios de engenharia e arquitetura</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-sm">
+                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Startups de construção tech</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-sm">
+                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Consultoria e empreendedorismo</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

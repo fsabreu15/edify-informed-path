@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { BookOpen, Layers, ArrowRight, Cpu, Wrench, BarChart3, Building2, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import formworkRebar from "@/assets/formwork-rebar.jpg";
 
 const EstruturaCurricular = () => {
   const disciplines = [
@@ -100,8 +101,14 @@ const EstruturaCurricular = () => {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="hero-gradient py-16 md:py-24">
-        <div className="section-container">
+      <section className="relative min-h-[50vh] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${formworkRebar})` }}
+        >
+          <div className="absolute inset-0 hero-gradient opacity-90" />
+        </div>
+        <div className="section-container relative z-10 py-16 md:py-24">
           <div className="max-w-3xl animate-fade-in">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent-foreground rounded-full text-base font-medium mb-6">
               15 Disciplinas • 360 Horas
