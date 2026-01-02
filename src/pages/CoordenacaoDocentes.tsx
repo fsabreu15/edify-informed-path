@@ -188,40 +188,10 @@ const CoordenacaoDocentes = () => {
         </div>
       </section>
 
-      {/* Institution Info */}
+      {/* Disclaimer Section */}
       <section className="py-16 md:py-20">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
-            <SectionHeader
-              title="Vinculação Institucional"
-              subtitle="O curso está vinculado ao Instituto Politécnico da PUC Minas."
-            />
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-card rounded-xl border border-border p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Instituto Politécnico (IPUC)
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  O Instituto Politécnico da PUC Minas é reconhecido pela excelência 
-                  em formação de engenheiros e profissionais da área tecnológica, 
-                  com tradição em ensino, pesquisa e extensão na área da construção civil.
-                </p>
-              </div>
-
-              <div className="bg-card rounded-xl border border-border p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Diretoria de Educação Continuada (IEC)
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  O curso é oferecido pela Diretoria de Educação Continuada da PUC Minas, 
-                  responsável pelos programas de pós-graduação lato sensu da instituição, 
-                  com infraestrutura consolidada para ensino a distância.
-                </p>
-              </div>
-            </div>
-
-            {/* Disclaimer about non-institutional site */}
             <div className="bg-accent/10 border border-accent/30 rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
