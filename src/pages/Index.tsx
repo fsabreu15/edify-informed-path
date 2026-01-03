@@ -59,11 +59,11 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight text-balance">
               Pós-Graduação em Construção de Edifícios
             </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed max-w-2xl font-medium">
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed max-w-2xl font-medium text-left">
               Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes — e também para recém-formados que buscam evolução rápida na carreira.
             </p>
-            <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl">
-              Programa avançado de especialização que integra tecnologias emergentes como BIM, SHM, drones e 
+            <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl text-left">
+              Programa avançado de especialização que integra tecnologias inovadoras como BIM, SHM, drones e 
               metodologias ágeis, preparando profissionais para liderar a transformação da construção civil.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -85,7 +85,7 @@ const Index = () => {
       </section>
 
       {/* Quick Info Section */}
-      <section className="py-10 md:py-12 section-alt">
+      <section className="py-8 md:py-10 section-alt">
         <div className="section-container">
           <div className="grid md:grid-cols-4 gap-6">
             <div className="flex items-center gap-4 p-6 bg-card rounded-lg border border-border">
@@ -132,7 +132,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-10 md:py-14">
+      <section className="py-8 md:py-12">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -152,7 +152,7 @@ const Index = () => {
                   </p>
                   <p className="text-muted-foreground">
                     Mesmo profissionais experientes encontrarão conteúdo aprofundado e atualizado 
-                    sobre tecnologias emergentes, metodologias inovadoras e práticas avançadas 
+                    sobre tecnologias inovadoras, metodologias inovadoras e práticas avançadas 
                     que estão transformando o setor da construção civil.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ const Index = () => {
                   <span className="inline-block px-3 py-1 bg-accent text-accent-foreground text-xs font-semibold rounded-full mb-2">
                     Execução de Obras
                   </span>
-                  <p className="text-primary-foreground font-medium">
+                  <p className="text-primary-foreground font-medium text-left">
                     Acompanhamento completo de canteiros de obra
                   </p>
                 </div>
@@ -235,7 +235,7 @@ const Index = () => {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-10 md:py-14 section-alt">
+      <section className="py-8 md:py-12 section-alt">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
@@ -263,19 +263,23 @@ const Index = () => {
               </div>
             </div>
             
-            {/* BIM Model Image */}
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border">
+            {/* BIM Model Image - Modern Design */}
+            <div className="relative group">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/50 relative">
                 <img 
                   src={bimModel} 
                   alt="Modelo BIM de edifício" 
-                  className="w-full h-auto"
+                  className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground px-6 py-3 rounded-xl shadow-lg">
-                <p className="font-bold text-lg">Modelagem BIM</p>
-                <p className="text-sm opacity-90">Tecnologia de ponta</p>
+              {/* Floating card with glass effect */}
+              <div className="absolute -bottom-6 -left-6 bg-card/95 backdrop-blur-sm border border-border px-6 py-4 rounded-xl shadow-xl">
+                <p className="font-bold text-lg text-foreground">Metodologia BIM</p>
+                <p className="text-sm text-muted-foreground">Modelagem e integração de projetos</p>
               </div>
+              {/* Accent decoration */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl" />
             </div>
           </div>
 
@@ -298,7 +302,7 @@ const Index = () => {
       </section>
 
       {/* Target Audience Section */}
-      <section className="py-10 md:py-14">
+      <section className="py-8 md:py-12">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -332,8 +336,8 @@ const Index = () => {
                   className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent rounded-2xl" />
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent rounded-2xl" />
+              <div className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-sm rounded-xl p-5 border border-border shadow-lg">
                 <h3 className="text-xl font-semibold text-foreground mb-3">
                   Áreas de Atuação
                 </h3>
@@ -362,7 +366,7 @@ const Index = () => {
       </section>
 
       {/* Disciplines Preview */}
-      <section className="py-10 md:py-14 section-alt">
+      <section className="py-8 md:py-12 section-alt">
         <div className="section-container">
           <SectionHeader
             title="Estrutura Curricular"
@@ -411,7 +415,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
             Inscreva-se Agora
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Acesse o portal oficial da PUC Minas para realizar sua inscrição, 
             consultar valores, datas e requisitos de ingresso.
           </p>

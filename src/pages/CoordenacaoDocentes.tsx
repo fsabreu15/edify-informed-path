@@ -2,6 +2,8 @@ import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { User, GraduationCap, BookOpen, ExternalLink } from "lucide-react";
 import buildingFacade from "@/assets/building-facade.jpg";
+import coordRafael from "@/assets/coord-rafael.png";
+import coordFelipe from "@/assets/coord-felipe.jpg";
 
 const CoordenacaoDocentes = () => {
   const coordinators = [
@@ -10,14 +12,16 @@ const CoordenacaoDocentes = () => {
       title: "Idealizador e Professor Mentor",
       formation: "Doutor em Engenharia Civil",
       email: "aredes@pucminas.br",
-      lattes: "http://lattes.cnpq.br/2011727"
+      lattes: "http://lattes.cnpq.br/9887463456871299",
+      photo: coordRafael
     },
     {
       name: "Prof. Dr. Felipe de Souza Abreu",
       title: "Idealizador do Projeto Pedagógico",
       formation: "Doutor em Engenharia Civil",
       email: "felipeabreu@pucminas.br",
-      lattes: "http://lattes.cnpq.br/9887463"
+      lattes: "http://lattes.cnpq.br/2011727700246315",
+      photo: coordFelipe
     }
   ];
 
@@ -87,7 +91,7 @@ const CoordenacaoDocentes = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
               Coordenação e Docentes
             </h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed text-left">
               Conheça o corpo docente qualificado que conduz o programa de 
               Pós-Graduação em Construção de Edifícios.
             </p>
@@ -96,7 +100,7 @@ const CoordenacaoDocentes = () => {
       </section>
 
       {/* Coordinators Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <SectionHeader
             title="Coordenação do Curso"
@@ -107,8 +111,12 @@ const CoordenacaoDocentes = () => {
             {coordinators.map((coordinator, index) => (
               <div key={index} className="card-academic p-8">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                    <User className="w-12 h-12 text-primary" />
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-primary/20 shadow-lg">
+                    <img 
+                      src={coordinator.photo} 
+                      alt={coordinator.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   <h3 className="text-xl font-semibold text-foreground mb-1">
@@ -140,7 +148,7 @@ const CoordenacaoDocentes = () => {
       </section>
 
       {/* Faculty Section */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <SectionHeader
             title="Corpo Docente"
@@ -189,7 +197,7 @@ const CoordenacaoDocentes = () => {
       </section>
 
       {/* Disclaimer Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-accent/10 border border-accent/30 rounded-xl p-6">
@@ -222,7 +230,7 @@ const CoordenacaoDocentes = () => {
             <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
               Estude com Especialistas
             </h2>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8 text-center">
               Aprenda com professores qualificados e experientes no setor 
               da construção civil.
             </p>
