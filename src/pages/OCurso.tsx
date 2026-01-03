@@ -7,7 +7,7 @@ import masonryWork from "@/assets/masonry-work.jpg";
 
 const OCurso = () => {
   const objectives = [
-    "Formar profissionais capacitados para gerenciar, planejar, executar e fiscalizar obras de edificações, com foco em tecnologias emergentes e metodologias inovadoras",
+    "Formar profissionais capacitados para gerenciar, planejar, executar e fiscalizar obras de edificações, com foco em tecnologias inovadoras e metodologias inovadoras",
     "Desenvolver habilidades em interpretação de projetos, orçamentação, gestão de obras, fundações e estruturas",
     "Capacitar para aplicação de ferramentas como BIM, SHM, drones e scanners a laser na construção civil",
     "Promover o uso de metodologias ágeis e Lean Construction para maior eficiência na execução das obras",
@@ -59,9 +59,9 @@ const OCurso = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
               O Curso
             </h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed text-left">
               Programa de especialização voltado à formação de profissionais capacitados 
-              para liderar a transformação da construção civil com tecnologias emergentes 
+              para liderar a transformação da construção civil com tecnologias inovadoras 
               e metodologias inovadoras.
             </p>
           </div>
@@ -69,7 +69,7 @@ const OCurso = () => {
       </section>
 
       {/* Context Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
@@ -124,7 +124,7 @@ const OCurso = () => {
       </section>
 
       {/* Program Info Cards */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -197,7 +197,7 @@ const OCurso = () => {
       </section>
 
       {/* Objectives Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-8">
@@ -223,7 +223,7 @@ const OCurso = () => {
       </section>
 
       {/* Key Areas Section */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <SectionHeader
             title="Eixos Temáticos"
@@ -277,7 +277,7 @@ const OCurso = () => {
       </section>
 
       {/* Competencies Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-8">
@@ -317,9 +317,9 @@ const OCurso = () => {
             <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
               Transforme Sua Carreira
             </h2>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8 text-center">
               Torne-se um especialista preparado para liderar a transformação da 
-              construção civil com tecnologias emergentes e metodologias inovadoras.
+              construção civil com tecnologias inovadoras e metodologias inovadoras.
             </p>
             <a
               href="https://vemprapuc.pucminas.br/construcao-de-edificios-ead-com-videoaulas"

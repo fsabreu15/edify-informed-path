@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import PromoBanner from "./PromoBanner";
-import Chatbot from "./Chatbot";
+import EnrollmentButton from "./EnrollmentButton";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <Footer />
-      <Chatbot />
+      <EnrollmentButton />
     </div>
   );
 };

@@ -116,7 +116,7 @@ const EstruturaCurricular = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
               Estrutura Curricular
             </h1>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed text-left">
               Grade curricular completa do programa de especialização em 
               Construção de Edifícios, com disciplinas de 24 horas cada.
             </p>
@@ -125,7 +125,7 @@ const EstruturaCurricular = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
@@ -153,7 +153,7 @@ const EstruturaCurricular = () => {
       </section>
 
       {/* Program Architecture */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <SectionHeader
             title="Eixos de Formação"
@@ -236,7 +236,7 @@ const EstruturaCurricular = () => {
       </section>
 
       {/* Disciplines List */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-16">
         <div className="section-container">
           <SectionHeader
             title="Grade Curricular"
@@ -281,7 +281,7 @@ const EstruturaCurricular = () => {
       </section>
 
       {/* Evaluation Section */}
-      <section className="py-16 md:py-20 section-alt">
+      <section className="py-10 md:py-14 section-alt">
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             <SectionHeader
@@ -341,7 +341,7 @@ const EstruturaCurricular = () => {
             <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
               Comece Sua Especialização
             </h2>
-            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8">
+            <p className="text-xl text-primary-foreground/90 leading-relaxed mb-8 text-center">
               Acesse o portal oficial da PUC Minas para informações sobre 
               inscrição, valores e datas de início.
             </p>
