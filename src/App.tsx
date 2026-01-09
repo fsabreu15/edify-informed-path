@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import OCurso from "./pages/OCurso";
 import EstruturaCurricular from "./pages/EstruturaCurricular";
@@ -16,15 +16,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/o-curso" element={<OCurso />} />
-          <Route path="/estrutura-curricular" element={<EstruturaCurricular />} />
-          <Route path="/coordenacao-docentes" element={<CoordenacaoDocentes />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/o-curso" element={<OCurso />} />
+        <Route path="/estrutura-curricular" element={<EstruturaCurricular />} />
+        <Route path="/coordenacao-docentes" element={<CoordenacaoDocentes />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </TooltipProvider>
   </QueryClientProvider>
 );
