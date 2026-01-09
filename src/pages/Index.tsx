@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import FeatureCard from "@/components/FeatureCard";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { 
   Building2, 
@@ -42,6 +43,12 @@ const Index = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Pós-Graduação em Construção de Edifícios | PUC Minas EAD"
+        description="Inscreva-se na pós-graduação em Construção de Edifícios da PUC Minas. Curso EAD com videoaulas, 360 horas, BIM, Lean Construction. Especialização para engenheiros e arquitetos."
+        keywords="pós-graduação construção civil, curso pós-graduação engenharia civil, especialização construção de edifícios, pós-graduação EAD engenharia, curso BIM online, pós-graduação PUC Minas, inscrição pós-graduação, matricula especialização, curso engenharia civil online, pós-graduação a distância, especialização lato sensu engenharia, Lean Construction curso, formação engenheiros construção"
+        canonicalPath="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[75vh] flex items-center">
         <div 
