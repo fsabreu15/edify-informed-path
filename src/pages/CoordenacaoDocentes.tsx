@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import SEO from "@/components/SEO";
 import { User, GraduationCap, BookOpen, ExternalLink } from "lucide-react";
 import buildingFacade from "@/assets/building-facade.jpg";
 import coordRafael from "@/assets/coord-rafael.png";
@@ -75,6 +76,12 @@ const CoordenacaoDocentes = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Coordenação e Docentes | Pós-Graduação Construção de Edifícios"
+        description="Conheça os coordenadores e professores do curso. Corpo docente qualificado com doutores e mestres. Inscreva-se na pós-graduação PUC Minas."
+        keywords="professores pós-graduação engenharia, coordenação curso construção, docentes especialização, corpo docente PUC Minas, professores engenharia civil, inscrição curso pós-graduação, matricula especialização, doutores engenharia civil"
+        canonicalPath="/coordenacao-docentes"
+      />
       {/* Page Header */}
       <section className="relative min-h-[50vh] flex items-center">
         <div 

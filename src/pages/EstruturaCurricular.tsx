@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import SEO from "@/components/SEO";
 import { BookOpen, Layers, ArrowRight, Cpu, Wrench, BarChart3, Building2, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import formworkRebar from "@/assets/formwork-rebar.jpg";
@@ -100,6 +101,12 @@ const EstruturaCurricular = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Estrutura Curricular | Pós-Graduação Construção de Edifícios"
+        description="Grade curricular completa: 15 disciplinas, 360 horas. BIM, Lean Construction, estruturas, patologias. Inscreva-se na pós-graduação PUC Minas."
+        keywords="grade curricular pós-graduação, disciplinas especialização engenharia, estrutura curricular construção, curso BIM disciplinas, pós-graduação 360 horas, inscrição especialização, matricula curso engenharia, disciplinas Lean Construction, curso patologias edificações"
+        canonicalPath="/estrutura-curricular"
+      />
       {/* Page Header */}
       <section className="relative min-h-[50vh] flex items-center">
         <div 

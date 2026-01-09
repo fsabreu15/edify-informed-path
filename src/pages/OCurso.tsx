@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
+import SEO from "@/components/SEO";
 import { Target, Lightbulb, CheckCircle, MapPin, Calendar, Clock, Cpu, Users, BarChart3, ArrowRight, ExternalLink } from "lucide-react";
 import constructionSite from "@/assets/construction-site.jpg";
 import plasteringWork from "@/assets/plastering-work.jpg";
@@ -43,6 +44,12 @@ const OCurso = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="O Curso | Pós-Graduação em Construção de Edifícios PUC Minas"
+        description="Conheça o curso de pós-graduação em Construção de Edifícios. Objetivos, competências e metodologia. Inscreva-se na especialização EAD da PUC Minas."
+        keywords="curso pós-graduação construção, objetivos pós-graduação engenharia, competências engenheiro civil, especialização construção PUC Minas, inscrição curso EAD, formação profissional engenharia, metodologia pós-graduação, matricula especialização engenharia, curso online engenharia civil"
+        canonicalPath="/o-curso"
+      />
       {/* Page Header */}
       <section className="relative min-h-[50vh] flex items-center">
         <div 
