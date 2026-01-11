@@ -44,9 +44,9 @@ const Index = () => {
   return (
     <Layout>
       <SEO 
-        title="Pós-Graduação em Construção de Edifícios | PUC Minas EAD"
-        description="Inscreva-se na pós-graduação em Construção de Edifícios da PUC Minas. Curso EAD com videoaulas, 360 horas, BIM, Lean Construction. Especialização para engenheiros e arquitetos."
-        keywords="pós-graduação construção civil, curso pós-graduação engenharia civil, especialização construção de edifícios, pós-graduação EAD engenharia, curso BIM online, pós-graduação PUC Minas, inscrição pós-graduação, matricula especialização, curso engenharia civil online, pós-graduação a distância, especialização lato sensu engenharia, Lean Construction curso, formação engenheiros construção"
+        title="Pós-Graduação em Engenharia Civil | PUC Minas | Construção de Edifícios | Matrículas Abertas"
+        description="Pós-Graduação em Engenharia Civil na PUC Minas. Especialização em Construção de Edifícios para engenheiros civis, arquitetos e profissionais da construção civil. Formação prática, focada no mercado. Matricule-se agora."
+        keywords="pós-graduação engenharia civil, pós-graduação PUC Minas, especialização construção de edifícios, curso engenharia civil EAD, pós-graduação construção civil, matrícula pós-graduação, especialização engenharia, curso gestão de obras, pós EAD engenharia civil, especialização construção predial, pós-graduação online PUC, curso planejamento de obras, especialização orçamento obras, pós-graduação gerenciamento obras"
         canonicalPath="/"
       />
       {/* Hero Section */}
@@ -64,14 +64,14 @@ const Index = () => {
               Especialização Lato Sensu • EAD com Videoaulas
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight text-balance">
-              Pós-Graduação em Construção de Edifícios
+              Pós-Graduação em Engenharia Civil
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 leading-relaxed max-w-2xl font-medium text-left">
-              Aprimoramento profissional de alto nível para engenheiros, arquitetos e profissionais experientes — e também para recém-formados que buscam evolução rápida na carreira.
+              A Pós-Graduação em Engenharia Civil é ideal para profissionais que desejam se destacar na área da construção civil, atuando com planejamento, execução e gestão de obras de forma técnica, prática e alinhada às exigências do mercado.
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8 leading-relaxed max-w-2xl text-left">
-              Programa avançado de especialização que integra tecnologias inovadoras como BIM, SHM, drones e 
-              metodologias ágeis, preparando profissionais para liderar a transformação da construção civil.
+              Especialização em Construção de Edifícios na PUC Minas com foco prático e aplicação real. 
+              Domine BIM, Lean Construction, SHM e metodologias inovadoras.
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
@@ -154,12 +154,12 @@ const Index = () => {
                     Este não é um curso básico.
                   </p>
                   <p className="text-foreground text-lg mb-4">
-                    Trata-se de uma pós-graduação de <strong>alto nível</strong>, projetada para o aprimoramento 
+                    Trata-se de uma pós-graduação de <strong>alto nível na PUC Minas</strong>, projetada para o aprimoramento 
                     profissional de engenheiros e arquitetos que já atuam no mercado.
                   </p>
                   <p className="text-muted-foreground">
                     Mesmo profissionais experientes encontrarão conteúdo aprofundado e atualizado 
-                    sobre tecnologias inovadoras, metodologias inovadoras e práticas avançadas 
+                    sobre tecnologias inovadoras, metodologias modernas e práticas avançadas 
                     que estão transformando o setor da construção civil.
                   </p>
                 </div>
@@ -368,6 +368,58 @@ const Index = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section - Por que fazer a Pós */}
+      <section className="py-8 md:py-12">
+        <div className="section-container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+              Por que fazer uma Pós em Engenharia Civil?
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              O mercado da construção exige cada vez mais profissionais qualificados, 
+              com domínio de processos, normas técnicas, gestão de custos, cronogramas 
+              e controle de qualidade. Esta especialização foi desenvolvida para quem 
+              busca crescimento profissional, melhores oportunidades e maior segurança técnica.
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+              O que você vai aprender na Pós-Graduação
+            </h2>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start gap-3 text-lg text-foreground">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                Planejamento e gerenciamento de obras
+              </li>
+              <li className="flex items-start gap-3 text-lg text-foreground">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                Orçamento, custos e cronogramas
+              </li>
+              <li className="flex items-start gap-3 text-lg text-foreground">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                Execução e controle de qualidade
+              </li>
+              <li className="flex items-start gap-3 text-lg text-foreground">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                Normas técnicas e boas práticas
+              </li>
+              <li className="flex items-start gap-3 text-lg text-foreground">
+                <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0 mt-2" />
+                Gestão de equipes e processos construtivos
+              </li>
+            </ul>
+
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+              Invista na sua carreira agora
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Se você está buscando uma pós-graduação em engenharia civil que realmente prepare 
+              para o mercado, esta é a sua oportunidade. Garanta sua matrícula na PUC Minas 
+              e dê o próximo passo na sua trajetória profissional.
+            </p>
           </div>
         </div>
       </section>
